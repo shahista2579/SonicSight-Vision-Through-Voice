@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".currencygemniai.MainActivity">
+
+    <!-- ImageView to show the mascot (sparky.png) -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+
+        />
+
+    <Button
+        android:id="@+id/pickImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pick Image" />
+
+    <org.tensorflow.lite.examples.detection.currencygemniai.CameraOverlayView
+        android:id="@+id/cameraOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/aiResponseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previewView"
+        android:layout_marginTop="24dp"
+        android:background="#EEEEEE"
+        android:padding="16dp"
+        android:text="AI response will appear here"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</LinearLayout>

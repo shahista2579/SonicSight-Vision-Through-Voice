@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <org.tensorflow.lite.examples.detection.HandwrittenAuthentication.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#80D7D7D7"
+        android:longClickable="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <org.tensorflow.lite.examples.detection.HandwrittenAuthentication.StatusTextView
+                android:id="@+id/status_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status text..."
+                android:textSize="10dp"
+                android:textIsSelectable="true" />
+
+            <org.tensorflow.lite.examples.detection.HandwrittenAuthentication.StatusTextView1
+                android:id="@+id/status_text_view2"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/download_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="downloadClick"
+                    android:text="Download" />
+
+                <Button
+                    android:id="@+id/recognize_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="recognizeClick"
+                    android:text="Recognize" />
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="clearClick"
+                    android:text="Clear" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/languages_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="deleteClick"
+                android:text="Delete model" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

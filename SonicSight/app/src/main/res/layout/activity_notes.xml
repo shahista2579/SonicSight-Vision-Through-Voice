@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF0F2B"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#e8e8e7"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="278dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="#BFF4F4"
+            android:layout_marginLeft="25dp"
+            android:text="Note Section"
+            android:textAlignment="center"
+            android:textColor="#0366AE"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:background="#F4EDD4"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="161dp"
+            android:layout_height="77dp"
+             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/notes"
+             />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:background="#f3f3f3"
+            android:backgroundTint="#C8C8C8"
+            android:fontFamily="sans-serif-light"
+            android:hint="Titile of the note "
+            android:textColor="#4C4D4F"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:background="#f3f3f3"
+            android:backgroundTint="#C8C8C8"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/black"
+            android:text="Note "
+            android:textColor="#4C4D4F" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

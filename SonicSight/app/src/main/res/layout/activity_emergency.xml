@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:background="#FFE714"
+    android:layout_height="match_parent"
+    tools:context=".Emergency">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="@drawable/emergency" />
+
+    <TextView
+        android:id="@+id/location2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="612dp"
+        android:gravity="center"
+        android:background="#E6B0B0"
+
+        android:hint="Your location"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="550dp"
+        android:background="#A2E5E8"
+        android:layout_marginEnd="1dp"
+        android:gravity="center"
+        android:text="Your location:- "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/note2"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="395dp"
+        android:gravity="center"        android:background="#E6B0B0"
+
+        android:hint="note"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="109dp"
+        android:background="#A2E5E8"
+        android:gravity="center"
+        android:text="Emergency number:-"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/editnum"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#E6B0B0"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="195dp"
+        android:gravity="center"
+        android:hint="number"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#A2E5E8"
+        android:gravity="center"
+        android:text="Note:- "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+</RelativeLayout>

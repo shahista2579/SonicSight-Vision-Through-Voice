@@ -1,0 +1,4 @@
+rootProject.name = 'Sonic Sight App'
+include ':app'
+include ':libfacesdk'
+include ':libfotoapparat'

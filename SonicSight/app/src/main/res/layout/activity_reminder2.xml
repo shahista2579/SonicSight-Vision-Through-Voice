@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/remind"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+     tools:context=".Reminder.ReminderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:layout_marginTop="-380dp"
+        android:orientation="vertical"
+        android:backgroundTint="#F6CDCD">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Add Reminder Here..."
+            android:id="@+id/addreminder"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#FF0909"
+             />
+
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:hint="Enter The Task" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/btnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:hint="date" />
+
+            <EditText
+                android:id="@+id/btnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:hint="time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
